@@ -12,6 +12,10 @@
 
 <%= f.submit "Log in", class: 'btn btn-primary' %>
 
+<%=f.label :remember_me, class: "checkbox_inline"%>
+<%=f.check_box :remember_me%>
+<span>Remember me on this computer</span>
+
 <%end%>
 
 <p>New User? <%= link_to "Sign up now!", signup_path %></p>
